@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 360px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" name="userName" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <div class="create-user-tab">
+        <button href="/Registration.html" onclick="handleClick1()">Create User</button>
+        <button href="/test.html" onclick="handleClick()">Change User</button>
+    </div>
+</div>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Get form values
+    const userName = document.getElementById('userName').value;
+    const password = document.getElementById('password').value;
+
+    // You can perform further validation if needed
+
+    // Send login credentials to the server
+    fetch(`http://localhost:8080/user/login/${userName}/${password}`)
+    
+    .then(response => {
+        if (response.ok) {
+            // Successful login
+            console.log('Login successful');
+            window.location.href='./home.html';
+            // Redirect or perform other actions
+        } else {
+            // Failed login
+            // console.error('Login failed');
+            alert("Please login with correct credentials");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Display error message to the user
+    });
+});
+
+ // Define the JavaScript function to be called on button click
+ function handleClick() {
+    	 window.location.href = '/test.html';
+    }
+function handleClick1() {
+    	 window.location.href = '/Registration.html';
+    }
+
+</script>
+
+</body>
+</html>

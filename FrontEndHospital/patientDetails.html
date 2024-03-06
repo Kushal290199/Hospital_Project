@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThankYou</title>
+    <style>
+        
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/Dhome.html">Home</a>
+        <a href="/patientDetails.html">Appointments</a>
+        <a href="/DoctorLogin.html">Logout</a>
+    </div>
+
+    <h2>Today's Appointment</h2>
+    <div id="appointment"></div>
+
+    <script>
+   fetch('http://localhost:8080/appointment/all')
+       .then(response => response.json())
+       .then(appointments => {
+           
+           let tableHtml = '<table border="1"><tr><th>First Name</th><th>Last Name</th><th>Mobile</th><th>Email</th><th>Date</th></tr>';
+           appointments.forEach(appointment => {
+               tableHtml += `<tr><td>${appointment.firstName}</td><td>${appointment.lastName}</td><td>${appointment.mobile}</td><td>${appointment.email}</td><td>${appointment.date}</td></tr>`;
+           });
+           tableHtml += '</table>';
+   
+           
+           document.getElementById('appointment').innerHTML = tableHtml;
+       })
+       .catch(error => {
+           console.error('Error:', error);
+           alert('Failed to fetch appointment data.');
+       });
+   
+      </script>
+
+</body>
+</html>
+

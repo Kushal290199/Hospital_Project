@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* CSS for Navbar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* body{
+            background-size:cover;
+background-repeat:not-repeat;
+background-image: url('https://tse3.mm.bing.net/th?id=OIP.nSp57iU4lheXQFIT7E6n_AHaHa&pid=Api&P=0&h=180');
+            
+        } */
+        .abc {
+	text-align: center;
+	background-color: aquamarine;
+}
+.navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+label {
+	font-size: 20px;
+	width: 120px;
+	display: inline-block;
+	margin: 4px;
+}
+
+.table {
+	float: right;
+	margin: 7px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.column .card img{
+  width: 100%;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* /////changes //// */
+.single-slider{
+  background-image:url('./images/slider2.jpg');
+}
+#h22{
+  text-align: center;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 50px;
+  /* border: 1px solid red; */
+}
+/* #socialName{
+  border: 1px solid red;
+  border-radius: 0px;
+} */
+#socialDiv{
+  border: 1px solid wheat;
+}
+#socialIcon{
+  display: block;
+}
+
+
+.media-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+    
+.media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.media-icons a:nth-child(1) {
+    background: #4267B2;
+}
+
+.media-icons a:nth-child(1):hover {
+    color: #4267B2;
+    background: #fff;
+}
+
+.media-icons a:nth-child(2) {
+    background: #1DA1F2;
+}
+
+.media-icons a:nth-child(2):hover {
+    color: #1DA1F2;
+    background: #fff;
+}
+
+.media-icons a:nth-child(3) {
+    background: #E1306C;
+}
+
+.media-icons a:nth-child(3):hover {
+    color: #E1306C;
+    background: #fff;
+}
+.col-lg-6{
+  height: 100px;
+  line-height: 25px;
+}
+.col-lg-6 a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.col-lg-6 a:hover{
+  cursor:pointer;
+}
+
+
+</style>
+    <link rel="stylesheet" href="./icofont.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/home.html">Home</a>
+    <a href="/OurSpeciality.html">Our Speciality</a>
+    <a href="/contact.html">Contact Us</a>
+    <a href="/appointment.html">Appointment</a>
+    <a href="/Login.html">Logout</a>
+</div>
+
+<section class="slider">
+  <div class="hero-slider">
+    <!-- Start Single Slider -->
+    <div class="single-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="text">
+              <h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Start Schedule Area -->
+		<section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							<!-- single-schedule -->
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-ambulance"></i>
+									</div>
+									<div class="single-content">
+										<span>Lorem Amet</span>
+										<h4>Emergency Cases</h4>
+										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/End Start schedule Area -->
+<!-- Start Feautes -->
+<section class="Feautes section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h2>We Are Always Ready to Help You & Your Family</h2>
+          <img src="images\section-img.png" alt="#">
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <!-- Start Single features -->
+        <div class="single-features">
+          <div class="signle-icon">
+            <i class="icofont icofont-ambulance-cross"></i>
+          </div>
+          <h3>Emergency Help</h3>
+          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+        </div>
+        <!-- End Single features -->
+      </div>
+      <div class="col-lg-4 col-12">
+        <!-- Start Single features -->
+        <div class="single-features">
+          <div class="signle-icon">
+            <i class="icofont icofont-medical-sign-alt"></i>
+          </div>
+          <h3>Enriched Pharmecy</h3>
+          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+        </div>
+        <!-- End Single features -->
+      </div>
+      <div class="col-lg-4 col-12">
+        <!-- Start Single features -->
+        <div class="single-features last">
+          <div class="signle-icon">
+            <i class="icofont icofont-stethoscope"></i>
+          </div>
+          <h3>Medical Treatment</h3>
+          <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+        </div>
+        <!-- End Single features -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ End Feautes -->
+
+
+</div>
+    <h2 id="h22" >Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img  src="images\doctor.jpg" alt="Harshal" >
+          <div class="container">
+            <h2>Dr.Harshal</h2>
+            <p class="title">Skin Specialist</p>
+            <p> Diagnoses and treats conditions that affect your hair, skin, and nailsDiagnoses and treats conditions that affect you.</p>
+            <p>harshal@special.com</p>
+            <p><button class="button" onclick="handleClick()">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="images\doctor.jpg" alt="Suraj" >
+          <div class="container">
+            <h2>Dr.Suraj</h2>
+            <p class="title">Orthopedics</p>
+            <p>Surgical and nonsurgical approaches to treat musculoskeletal issues, such as sports injuries.All Type of Orthopedics.</p>
+            <p>suraj@special.com</p>
+            <p><button class="button" onclick="handleClick()">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="images\doctor.jpg" alt="Yogesh" >
+          <div class="container">
+            <h2>Dr.Yogesh</h2>
+            <p class="title">Designer</p>
+            <p>A specially trained medical doctor who diagnoses and treats conditions that affect your nervous system your brain, spinal cord</p>
+            <p>yogesh@special.com</p>
+            <p><button class="button" onclick="handleClick()">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    
+</div>
+<!-- Footer Area -->
+<footer id="footer" class="footer ">
+  <!-- Footer Top -->
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-footer">
+            <h2>About Us</h2>
+            
+            <!-- Social -->
+           
+            <div class="media-icons">
+              <a href="https://www.facebook.com/" title="Visit our Facebook page"><i class="fab fa-facebook-f"></i> Facebook</a>
+              <a href="https://www.google.com/" title="Visit our Google page"><i class="fab fa-google"></i> Google</a>
+              <a href="https://twitter.com/" title="Visit our Twitter page"><i class="fab fa-twitter"></i> Twitter</a>
+
+              
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-footer f-link">
+            <h2>Quick Links</h2>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+               
+                <a href="./home.html">Home</a>
+                <a href="./OurSpeciality.html">Our Speciality</a>
+                <a href="./appointment.html">Appointment</a>
+                <a href="./contact.html">Contact Us</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-footer">
+            <h2>Open Hours</h2>
+            <ul class="time-sidual">
+              <li class="day">Monday - Friday <span>8.00-20.00</span></li>
+              <li class="day">Saturday <span>9.00-18.30</span></li>
+              <li class="day">Sunday  <span>Close</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+          <div class="single-footer">
+            <h2>Newsletter</h2>
+            <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ End Footer Top -->
+
+  
+</body>
+</html>
+
+<!-- <script>
+    // Define the JavaScript function to be called on button click
+    function handleClick1() {
+    	 window.location.href = '/home.html';
+    }
+    function handleClick2() {
+    	 window.location.href = '/OurSpeciality.html';
+    }
+    function handleClick3() {
+    	 window.location.href = '/appointment.html';
+    } -->
+    <script>
+    function handleClick() {
+    	 window.location.href = '/contact.html';
+    }
+</script>
